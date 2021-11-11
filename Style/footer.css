@@ -1,0 +1,111 @@
+footer {
+	user-select: none;
+	display: grid;
+	grid-template-areas: 'credit menu booking support getApp';
+	gap: 0px 120px;
+	grid-template-columns: repeat(5, max-content);
+	width: min-content;
+	margin: 0 auto 91px;
+}
+footer .credit {
+	grid-area: credit;
+	display: grid;
+	grid-template:
+		'header header header' auto
+		'paragraf paragraf paragraf' auto
+		'facebook telegram instagram' auto /
+		1fr 1fr 1fr;
+
+	gap: 20px 0px;
+}
+
+footer .credit h3 {
+	font-size: 24px;
+	font-weight: 900;
+	grid-area: header;
+}
+footer .credit h3 span {
+	color: #3075c6;
+}
+
+footer .credit p {
+	grid-area: paragraf;
+	font-size: 20px;
+	font-weight: 600;
+	color: #aeaeae;
+}
+
+footer .icon {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: 2px solid #aeaeae;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .icon i {
+	font-size: 20px;
+	color: #aeaeae;
+}
+
+footer > div:not(.credit) h3 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+footer .list {
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #aeaeae;
+}
+
+footer .list:hover {
+	color: black;
+	cursor: pointer;
+}
+
+footer .menu {
+	grid-area: menu;
+}
+
+footer .booking {
+	grid-area: booking;
+}
+
+footer .support {
+	grid-area: support;
+}
+
+footer .getApp {
+	grid-area: getApp;
+}
+
+footer .credit .facebookBorder {
+	border: 2px solid #4267b2;
+	cursor: pointer;
+}
+
+footer .credit .facebookColor {
+	color: #4267b2;
+}
+
+footer .credit .instagramBorder {
+	border: 2px solid #e1306c;
+	cursor: pointer;
+}
+
+footer .credit .instagramColor {
+	color: #e1306c;
+}
+
+footer .credit .telegramBorder {
+	border: 2px solid #0088cc;
+	cursor: pointer;
+}
+
+footer .credit .telegramColor {
+	color: #0088cc;
+}

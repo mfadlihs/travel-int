@@ -1,0 +1,105 @@
+.containerTop {
+	display: grid;
+	margin: 0 138px 100px;
+	grid-template:
+		'header header header header'
+		'caption caption caption caption'
+		'grandCanyon newYork bali snowHills'
+		'tokyo snowForest cappadocia ackerman';
+	gap: 60px 40px;
+}
+
+.containerTop .image {
+	width: 220px;
+	height: 160px;
+	border-radius: 10px;
+	filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.2));
+	margin: 0 auto 17px;
+}
+.containerTop .box .vacation {
+	font-size: 18px;
+	font-weight: 700;
+	color: #313131;
+	margin-bottom: 4.2px;
+}
+.containerTop .box .caption {
+	font-size: 14px;
+	font-weight: 600;
+	color: #aeaeae;
+	margin-bottom: 60px;
+}
+.containerTop .peekVacation {
+	display: flex;
+	position: absolute;
+	width: 84%;
+	bottom: 22px;
+	justify-content: space-between;
+}
+.containerTop .peekVacation > div {
+	display: flex;
+	align-items: center;
+}
+.containerTop .peekVacation .icon {
+	width: 16px;
+	height: 16px;
+}
+.containerTop .peekVacation .locationIcon {
+	margin-right: 3px;
+}
+.containerTop .peekVacation .priceIcon {
+	margin-right: 5px;
+}
+.containerTop .peekVacation > div > div {
+	font-size: 16px;
+	font-weight: 700;
+	color: #aeaeae;
+}
+.containerTop .peekVacation > div > div span {
+	font-size: 10px;
+	font-weight: 400;
+}
+
+.containerTop > header {
+	font-size: 42px;
+	font-weight: 700;
+	grid-area: header;
+	text-align: center;
+	margin-bottom: -40px;
+}
+.containerTop > p {
+	font-size: 16px;
+	font-weight: 600;
+	color: #aeaeae;
+	grid-area: caption;
+	text-align: center;
+	margin-bottom: -10px;
+}
+.containerTop .box {
+	padding: 21px;
+	user-select: none;
+	box-shadow: 0px 4px 45px -15px rgba(0, 0, 0, 0.15);
+	border-radius: 25px;
+	position: relative;
+}
+.boxSectionOnHover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+.boxSectionOnHover::after {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	position: absolute;
+	content: 'Book Trip Now';
+	width: 100%;
+	bottom: -38px;
+	background-color: #3075c6;
+	box-shadow: 0px 6px 15px 0px #0000000d;
+	border-radius: 0 0 26px 26px;
+	left: 0;
+	right: 0;
+	height: 52px;
+}

@@ -1,0 +1,25 @@
+.viewTourButton {
+	background-color: rgba(48, 117, 198, 0.85);
+	padding: 17px 52px;
+	font-size: 20px;
+	font-weight: 600;
+	display: flex;
+	user-select: none;
+	justify-content: center;
+	align-items: center;
+	width: max-content;
+	color: white;
+	border-radius: 10px;
+	margin: 0 auto 90px;
+	box-shadow: 0px 4px 10px -2px #999;
+}
+
+.viewTourButton:hover {
+	cursor: pointer;
+	background-color: #3075c6;
+	transform: scale(1.05);
+}
+.viewTourButton:active {
+	transform: translateY(5px) scale(1);
+	box-shadow: 0px 2px 10px -2px #999;
+}

@@ -1,0 +1,18 @@
+.qrCodeContainer {
+	background: url('../Assets/qrCode/background.png');
+	background-repeat: no-repeat;
+	padding: 50px 0 48px;
+	display: flex;
+	flex-direction: column;
+	width: 1115px;
+	height: 394px;
+	border-radius: 35px;
+	margin: 0 auto 96px;
+	align-items: center;
+}
+
+.qrCodeContainer h2 {
+	font-size: 56px;
+	font-weight: 900;
+	margin-bottom: 40px;
+}
